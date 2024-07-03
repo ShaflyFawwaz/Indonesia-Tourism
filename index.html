@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Indonesia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Indonesia Tourism</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#culture">Kebudayaan</a></li>
+                <li><a href="#tourism">Wisata</a></li>
+                <li><a href="#hotels">Hotel</a></li>
+                <li><a href="#booking">Transaksi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="banner">
+            <h1>Welcome to Indonesia</h1>
+            <p>Explore the diverse culture, breathtaking places, and top-notch hotels!</p>
+        </div>
+    </section>
+
+    <section id="culture">
+        <h2>Kebudayaan Indonesia</h2>
+        <div class="content">
+            <article>
+                <img src="images/tari-kecak.jpg" alt="Tari Kecak">
+                <h3>Tarian Tradisional</h3>
+                <p>Indonesia memiliki berbagai tarian tradisional seperti Tari Kecak dari Bali, Tari Saman dari Aceh, dan banyak lagi yang mencerminkan keunikan budaya setiap daerah.</p>
+            </article>
+            <article>
+                <img src="images/ngaben.jpg" alt="Upacara Ngaben">
+                <h3>Upacara Adat</h3>
+                <p>Upacara adat seperti Ngaben di Bali dan Sekaten di Yogyakarta menunjukkan kekayaan tradisi dan kepercayaan yang diwariskan turun-temurun.</p>
+            </article>
+            <article>
+                <img src="images/batik.jpg" alt="Batik">
+                <h3>Tradisi</h3>
+                <p>Tradisi unik seperti Batik dari Jawa dan Tenun dari NTT merupakan warisan budaya yang menjadi kebanggaan Indonesia di mata dunia.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="tourism">
+        <h2>Tempat Wisata Terbaik di Indonesia</h2>
+        <div class="content">
+            <article>
+                <img src="images/bali.jpg" alt="Bali">
+                <h3>Bali</h3>
+                <p>Bali terkenal dengan pantainya yang indah, budaya yang kaya, dan kehidupan malam yang vibrant.</p>
+            </article>
+            <article>
+                <img src="images/raja-ampat.jpg" alt="Raja Ampat">
+                <h3>Raja Ampat</h3>
+                <p>Raja Ampat adalah surga bagi penyelam dengan keanekaragaman hayati bawah laut yang menakjubkan.</p>
+            </article>
+            <article>
+                <img src="images/yogyakarta.jpg" alt="Yogyakarta">
+                <h3>Yogyakarta</h3>
+                <p>Yogyakarta menawarkan kombinasi unik antara budaya tradisional dan kenyamanan modern dengan candi-candi bersejarah seperti Borobudur dan Prambanan.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="hotels">
+        <h2>Hotel Favorit di Indonesia</h2>
+        <div class="content">
+            <article>
+                <img src="images/hotel-mulia.jpg" alt="Hotel Mulia, Jakarta">
+                <h3>Hotel Mulia, Jakarta</h3>
+                <p>Fasilitas lengkap, harga mulai dari Rp 2.000.000 per malam. Alamat: Jl. Asia Afrika Senayan, Jakarta. Informasi lebih lanjut: (021) 5747777</p>
+            </article>
+            <article>
+                <img src="images/grand-hyatt.jpg" alt="Grand Hyatt, Bali">
+                <h3>Grand Hyatt, Bali</h3>
+                <p>Fasilitas lengkap, harga mulai dari Rp 3.000.000 per malam. Alamat: Kawasan Wisata Nusa Dua, Bali. Informasi lebih lanjut: (0361) 771234</p>
+            </article>
+            <article>
+                <img src="images/plataran-komodo.jpg" alt="Plataran Komodo, Labuan Bajo">
+                <h3>Plataran Komodo, Labuan Bajo</h3>
+                <p>Fasilitas lengkap, harga mulai dari Rp 4.000.000 per malam. Alamat: Labuan Bajo, NTT. Informasi lebih lanjut: (0385) 2441000</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Transaksi Wisata</h2>
+        <form id="bookingForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="destination">Destinasi:</label>
+            <select id="destination" name="destination" required>
+                <option value="bali">Bali</option>
+                <option value="raja-ampat">Raja Ampat</option>
+                <option value="yogyakarta">Yogyakarta</option>
+            </select>
+            
+            <label for="hotel">Hotel:</label>
+            <select id="hotel" name="hotel" required>
+                <option value="mulia-jakarta">Hotel Mulia, Jakarta</option>
+                <option value="hyatt-bali">Grand Hyatt, Bali</option>
+                <option value="plataran-komodo">Plataran Komodo, Labuan Bajo</option>
+            </select>
+            
+            <label for="checkin">Tanggal Check-in:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            
+            <label for="checkout">Tanggal Check-out:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Discover Indonesia. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
